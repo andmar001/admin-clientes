@@ -7,3 +7,5 @@ npx tailwindcss init -p
 # formKit
 npm install @formkit/vue
 Nos permite crear formularios de manera sencilla y con validaciones
+# instalacion de estilos de formkit
+npm i @formkit/themes
