@@ -1,14 +1,12 @@
 <script setup>
-   import { RouterLink } from 'vue-router';
+   import RouterLink from '../components/UI/RouterLink.vue';
 
 </script>
 
 <template>
-   <div>
-      <RouterLink :to="{ name:'inicio'}">
-         <button class="bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded">
-            Volver
-         </button>
+   <div class="flex justify-end">
+      <RouterLink to="inicio">
+         Volver
       </RouterLink>
    </div>
    <div>
