@@ -1,28 +1,22 @@
 {
-   "clientes":[
-      {
-         "id":1,
-         "nombre":"Juan",
-         "apellido":"Perez",
-         "edad":30,
-         "direccion":"Calle 123",
-         "telefono":"1234567"
-      },
-      {
-         "id":2,
-         "nombre":"Maria",
-         "apellido":"Gomez",
-         "edad":25,
-         "direccion":"Calle 456",
-         "telefono":"7654321"
-      },
-      {
-         "id":3,
-         "nombre":"Pedro",
-         "apellido":"Rodriguez",
-         "edad":40,
-         "direccion":"Calle 789",
-         "telefono":"1231231"
-      }
-   ]
+  "clientes": [
+    {
+      "nombre": "Antonio ",
+      "apellido": "Andrade",
+      "email": "andmar@gmail.com",
+      "telefono": "473-124-7978",
+      "empresa": "DGTIT",
+      "puesto": "Desarrollador",
+      "id": 1
+    },
+    {
+      "nombre": "Jose",
+      "apellido": "Perez",
+      "email": "perez@gmail.com",
+      "telefono": "473-124-7972",
+      "empresa": "coca cola",
+      "puesto": "Software",
+      "id": 2
+    }
+  ]
 }

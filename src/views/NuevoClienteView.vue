@@ -1,21 +1,9 @@
 <script setup>
-   import { onMounted } from 'vue';
-   import axios from 'axios';
-   import { reactive } from 'vue';
+   import axios from "axios";
    import  { FormKit }  from "@formkit/vue"
    import RouterLink from '../components/UI/RouterLink.vue';
    import Heading from '../components/UI/Heading.vue';
    
-   onMounted(() => {
-      axios.get('http://localhost:4000/clientes')
-         .then(( { data } ) =>{
-            console.log(data)
-         })
-         .catch((error) => {
-            console.log(error)
-         })
-   });
-
    defineProps({
       titulo: {
          type: String
@@ -23,6 +11,9 @@
    })
 
    const handleSubmit = (data) => {
+      axios.post('http://localhost:4000/clientes', data)
+         .then(({ respuesta }) => console.log(respuesta))
+         .catch(error => console.log(error))
    }
 
 </script>
