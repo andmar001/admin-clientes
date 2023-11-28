@@ -13,3 +13,6 @@ npm i @formkit/themes
 # expresiones regulares
 *matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/
 XXX-XXX-XXXX
+
+# como levantar un servidor de pruebas
+json-server --watch db.json --port 4000
