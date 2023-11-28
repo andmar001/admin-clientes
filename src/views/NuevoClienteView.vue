@@ -8,6 +8,11 @@
          type: String
       }
    })
+
+   const handleSubmit = (data) => {
+      console.log(data)
+   }
+
 </script>
 
 <template>
@@ -27,15 +32,12 @@
                type="form"
                submit-label="Agregar Cliente"
                incomplete-message="No se pudo enviar el formulario, verifica los campos"
-               :value="{
-                  location: 'New York City',
-                  duration: '2 weeks',
-                  price: 'average'
-                }"              
+               @submit="handleSubmit"
             >
                <FormKit
                   type="text"
                   label="Nombre"
+                  name="nombre"
                   placeholder="Nombre del cliente"
                   validation="required"
                   :validation-messages="{
@@ -45,6 +47,7 @@
                <FormKit
                   type="text"
                   label="Apellido"
+                  name="apellido"
                   placeholder="Apellido del cliente"
                   validation="required"
                   :validation-messages="{
@@ -54,6 +57,7 @@
                <FormKit
                   type="email"
                   label="Email"
+                  name="email"
                   placeholder="Email del cliente"
                   validation="required|email"
                   :validation-messages="{
@@ -64,6 +68,7 @@
                <FormKit
                   type="text"
                   label="Teléfono"
+                  name="telefono"
                   placeholder="Teléfono: XXX-XXX-XXXX"
                   validation="*matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
                   :validation-messages="{
@@ -73,11 +78,13 @@
                <FormKit
                   type="text"
                   label="Empresa"
+                  name="empresa"
                   placeholder="Empresa del cliente"
                />
                <FormKit
                   type="text"
                   label="Puesto"
+                  name="puesto"
                   placeholder="Puesto del cliente"
                />
                 
