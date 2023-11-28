@@ -16,3 +16,6 @@ XXX-XXX-XXXX
 
 # como levantar un servidor de pruebas
 json-server --watch db.json --port 4000
+
+# instalacion de axios
+npm install axios
