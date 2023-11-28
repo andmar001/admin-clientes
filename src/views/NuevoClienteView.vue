@@ -1,5 +1,5 @@
 <script setup>
-   import  {FormKit}  from "@formkit/vue"
+   import  { FormKit }  from "@formkit/vue"
    import RouterLink from '../components/UI/RouterLink.vue';
    import Heading from '../components/UI/Heading.vue';
    
@@ -23,20 +23,65 @@
       <div class="mx-auto mt-10 bg-white shadow" >
 
          <div class="mx-auto md:w-2/3 py-20 px-6">
-            <Formkit
+            <FormKit
                type="form"
+               submit-label="Agregar Cliente"
+               incomplete-message="No se pudo enviar el formulario, verifica los campos"
+               :value="{
+                  location: 'New York City',
+                  duration: '2 weeks',
+                  price: 'average'
+                }"              
             >
                <FormKit
                   type="text"
                   label="Nombre"
                   placeholder="Nombre del cliente"
-                  help="Escribe el nombre del cliente que deseas registrar"
                   validation="required"
                   :validation-messages="{
-                     required: 'El nombre del Cliente es obligatorio'
+                     required: 'El Nombre del Cliente es obligatorio'
                   }"
                />
-            </Formkit>
+               <FormKit
+                  type="text"
+                  label="Apellido"
+                  placeholder="Apellido del cliente"
+                  validation="required"
+                  :validation-messages="{
+                     required: 'El Apellido del Cliente es obligatorio'
+                  }"
+               />
+               <FormKit
+                  type="email"
+                  label="Email"
+                  placeholder="Email del cliente"
+                  validation="required|email"
+                  :validation-messages="{
+                     required: 'El Email del Cliente es obligatorio',
+                     email: 'El Email debe ser válido'
+                  }"
+               />
+               <FormKit
+                  type="text"
+                  label="Teléfono"
+                  placeholder="Teléfono: XXX-XXX-XXXX"
+                  validation="*matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
+                  :validation-messages="{
+                     matches: 'El formato debe ser válido'
+                  }"
+               />
+               <FormKit
+                  type="text"
+                  label="Empresa"
+                  placeholder="Empresa del cliente"
+               />
+               <FormKit
+                  type="text"
+                  label="Puesto"
+                  placeholder="Puesto del cliente"
+               />
+                
+            </FormKit>
          </div>
 
       </div>
