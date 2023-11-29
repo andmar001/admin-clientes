@@ -16,5 +16,8 @@ export default {
    cambiarEstadoCliente(id, data) {
       console.log(data)
       return api.patch('/clientes/' + id, data)
+   },
+   eliminarCliente(id) {
+      return api.delete(`/clientes/${id}`)
    }
 }
