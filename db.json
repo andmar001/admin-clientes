@@ -1,13 +1,13 @@
 {
   "clientes": [
     {
-      "nombre": "netflix",
+      "nombre": "netflix tres",
       "apellido": "Torres",
       "email": "antonio@gmail.com",
       "telefono": "234-234-5666",
       "empresa": "Femsa",
       "puesto": "desarrollador",
-      "estado": true,
+      "estado": 1,
       "id": 1
     },
     {
@@ -17,8 +17,18 @@
       "telefono": "234-234-5666",
       "empresa": "Femsa",
       "puesto": "desarrollador",
-      "estado": false,
+      "estado": 1,
       "id": 2
+    },
+    {
+      "nombre": "Pepe",
+      "apellido": "pecas",
+      "email": "pepe@gmail.com",
+      "telefono": "234-234-2332",
+      "empresa": "Femsa",
+      "puesto": "Repartidor",
+      "estado": 1,
+      "id": 3
     }
   ]
 }

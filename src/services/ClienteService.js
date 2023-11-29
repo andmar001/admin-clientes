@@ -10,4 +10,7 @@ export default {
    agregarCliente(data) {
       return api.post('/clientes', data)
    },
+   editarCliente(id, data) {
+      return api.patch(`/clientes/${id}`, data)
+   },
 }

@@ -23,3 +23,8 @@ npm install axios
 # router de vue
 const route = useRoute(); // para obtener los parametros de la ruta
 const router = useRouter(); // para redireccionar a otra ruta
+
+# put 
+El método PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la solicitud.
+# patch 
+El método PATCH se utiliza para aplicar modificaciones parciales a un recurso.

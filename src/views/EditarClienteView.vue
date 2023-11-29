@@ -23,12 +23,7 @@
    onMounted(() => {
       ClienteService.obtenerCliente(id)
          .then(({data}) => {
-            formData.nombre = data.nombre;
-            formData.apellido = data.apellido;
-            formData.email = data.email;
-            formData.telefono = data.telefono;
-            formData.empresa = data.empresa;
-            formData.puesto = data.puesto;
+            Object.assign(formData, data)
          })
          .catch((error) => console.log(error))
    })
@@ -39,8 +34,12 @@
       }
    })
 
-   const handleSubmit = () => {
-      console.log('submit');
+   const handleSubmit = (data) => {
+      ClienteService.editarCliente(id, data)
+         .then(() => {
+            router.push({ name: 'listado-clientes' })
+         })
+         .catch((error) => console.log(error))      
    }
 
 </script>
@@ -60,7 +59,7 @@
          <div class="mx-auto md:w-2/3 py-20 px-6">
             <FormKit
                type="form"
-               submit-label="Agregar Cliente"
+               submit-label="Guardar Cambios"
                incomplete-message="No se pudo enviar el formulario, verifica los campos"
                @submit="handleSubmit"
                :value="formData"
