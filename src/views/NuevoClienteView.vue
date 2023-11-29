@@ -5,11 +5,7 @@
    import RouterLink from '../components/UI/RouterLink.vue';
    import Heading from '../components/UI/Heading.vue';
    
-   const route = useRoute();
    const router = useRouter();
-
-   console.log(route);
-   console.log(router);
 
    defineProps({
       titulo: {
@@ -19,7 +15,10 @@
 
    const handleSubmit = (data) => {
       axios.post('http://localhost:4000/clientes', data)
-         .then(({ respuesta }) => console.log(respuesta))
+         .then(({ respuesta }) => {
+            router.push({ name: 'inicio' })
+            console.log(respuesta)
+         })
          .catch(error => console.log(error))
    }
 

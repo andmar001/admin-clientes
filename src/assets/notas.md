@@ -19,3 +19,7 @@ json-server --watch db.json --port 4000
 
 # instalacion de axios
 npm install axios
+
+# router de vue
+const route = useRoute(); // para obtener los parametros de la ruta
+const router = useRouter(); // para redireccionar a otra ruta

@@ -17,6 +17,33 @@
       "empresa": "coca cola",
       "puesto": "Software",
       "id": 2
+    },
+    {
+      "nombre": "Pedro",
+      "apellido": "Lopez",
+      "email": "pedro@gmail.com",
+      "telefono": "473-124-7923",
+      "empresa": "femsa",
+      "puesto": "desarrollador",
+      "id": 3
+    },
+    {
+      "nombre": "Pedro",
+      "apellido": "perez",
+      "email": "pedro@gmail.com",
+      "telefono": "473-124-7908",
+      "empresa": "Femsa",
+      "puesto": "Desarrollador",
+      "id": 4
+    },
+    {
+      "nombre": "karlos",
+      "apellido": "kardenaz",
+      "email": "karlos@gmail.com",
+      "telefono": "474-247-9084",
+      "empresa": "femsa",
+      "puesto": "Algo",
+      "id": 5
     }
   ]
 }
