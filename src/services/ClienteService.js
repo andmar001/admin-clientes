@@ -9,5 +9,5 @@ export default {
    },
    agregarCliente(data) {
       return api.post('/clientes', data)
-   }
+   },
 }
