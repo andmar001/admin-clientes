@@ -1,58 +1,24 @@
 {
   "clientes": [
     {
-      "nombre": "Antonio ",
-      "apellido": "Andrade",
-      "email": "andmar@gmail.com",
-      "telefono": "473-124-7978",
-      "empresa": "DGTIT",
-      "puesto": "Desarrollador",
+      "nombre": "netflix",
+      "apellido": "Torres",
+      "email": "antonio@gmail.com",
+      "telefono": "234-234-5666",
+      "empresa": "Femsa",
+      "puesto": "desarrollador",
+      "estado": true,
       "id": 1
     },
     {
-      "nombre": "Jose",
-      "apellido": "Perez",
-      "email": "perez@gmail.com",
-      "telefono": "473-124-7972",
-      "empresa": "coca cola",
-      "puesto": "Software",
-      "id": 2
-    },
-    {
-      "nombre": "Pedro",
-      "apellido": "Lopez",
-      "email": "pedro@gmail.com",
-      "telefono": "473-124-7923",
-      "empresa": "femsa",
-      "puesto": "desarrollador",
-      "id": 3
-    },
-    {
-      "nombre": "Pedro",
-      "apellido": "perez",
-      "email": "pedro@gmail.com",
-      "telefono": "473-124-7908",
-      "empresa": "Femsa",
-      "puesto": "Desarrollador",
-      "id": 4
-    },
-    {
-      "nombre": "karlos",
-      "apellido": "kardenaz",
-      "email": "karlos@gmail.com",
-      "telefono": "474-247-9084",
-      "empresa": "femsa",
-      "puesto": "Algo",
-      "id": 5
-    },
-    {
-      "nombre": "Luis",
+      "nombre": "jose",
       "apellido": "Torres",
-      "email": "tony@gmail.com",
-      "telefono": "234-344-2343",
-      "empresa": "femsa",
-      "puesto": "Desarrollador",
-      "id": 6
+      "email": "antonio@gmail.com",
+      "telefono": "234-234-5666",
+      "empresa": "Femsa",
+      "puesto": "desarrollador",
+      "estado": false,
+      "id": 2
     }
   ]
 }
