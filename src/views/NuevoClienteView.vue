@@ -1,9 +1,16 @@
 <script setup>
    import axios from "axios";
    import  { FormKit }  from "@formkit/vue"
+   import { useRoute, useRouter } from "vue-router";
    import RouterLink from '../components/UI/RouterLink.vue';
    import Heading from '../components/UI/Heading.vue';
    
+   const route = useRoute();
+   const router = useRouter();
+
+   console.log(route);
+   console.log(router);
+
    defineProps({
       titulo: {
          type: String
