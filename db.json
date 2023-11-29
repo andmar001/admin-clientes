@@ -44,6 +44,15 @@
       "empresa": "femsa",
       "puesto": "Algo",
       "id": 5
+    },
+    {
+      "nombre": "Luis",
+      "apellido": "Torres",
+      "email": "tony@gmail.com",
+      "telefono": "234-344-2343",
+      "empresa": "femsa",
+      "puesto": "Desarrollador",
+      "id": 6
     }
   ]
 }
