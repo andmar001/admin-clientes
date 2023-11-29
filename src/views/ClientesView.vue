@@ -24,6 +24,17 @@
    const existenClientes = computed(() => {
       return clientes.value.length > 0
    });
+
+   const actualizarEstado = ({ id,estado }) =>{
+      ClienteService.cambiarEstadoCliente(id, { estado: !estado })
+         .then(() => {
+            // Buscar el indice del cliente que se actualizo y cambiar su estado
+            const i = clientes.value.findIndex(cliente => cliente.id === id);
+            clientes.value[i].estado = !estado;
+         })
+         .catch(error => console.log(error))
+   }
+
 </script>
 
 <template>
@@ -55,6 +66,7 @@
                            v-for="cliente in clientes"
                            :key="cliente.id"
                            :cliente="cliente"
+                           @actualizar-estado="actualizarEstado"
                         />
                      </tbody>
                  </table>

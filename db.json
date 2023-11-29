@@ -7,7 +7,7 @@
       "telefono": "234-234-5666",
       "empresa": "Femsa",
       "puesto": "desarrollador",
-      "estado": 1,
+      "estado": true,
       "id": 1
     },
     {
@@ -17,7 +17,7 @@
       "telefono": "234-234-5666",
       "empresa": "Femsa",
       "puesto": "desarrollador",
-      "estado": 1,
+      "estado": true,
       "id": 2
     },
     {

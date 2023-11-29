@@ -13,4 +13,8 @@ export default {
    editarCliente(id, data) {
       return api.patch(`/clientes/${id}`, data)
    },
+   cambiarEstadoCliente(id, data) {
+      console.log(data)
+      return api.patch('/clientes/' + id, data)
+   }
 }
